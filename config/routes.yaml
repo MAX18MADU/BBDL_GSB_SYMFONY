@@ -1,6 +1,6 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
-Accueil:
+Liste:
     path: /
-    controller: App\Controller\IndexController::Accueil
+    controller: App\Controller\IndexController::Liste

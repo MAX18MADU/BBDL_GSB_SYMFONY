@@ -18,9 +18,9 @@ class IndexController extends AbstractController
         ]);
     }
 
-    public function Accueil(): Response
+    public function Liste(): Response
     {
-        return $this->render('index/Accueil.html.twig', [
+        return $this->render('index/Liste.html.twig', [
             'controller_name' => 'IndexController',
         ]);
     }
