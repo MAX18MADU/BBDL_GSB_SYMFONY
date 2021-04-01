@@ -17,4 +17,12 @@ class IndexController extends AbstractController
             'controller_name' => 'IndexController',
         ]);
     }
+
+    public function Accueil(): Response
+    {
+        return $this->render('index/Accueil.html.twig', [
+            'controller_name' => 'IndexController',
+        ]);
+    }
+
 }
