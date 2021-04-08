@@ -4,3 +4,6 @@
 Liste:
     path: /
     controller: App\Controller\IndexController::Liste
+Details:
+    path: /Details
+    controller: App\Controller\IndexController::Details
