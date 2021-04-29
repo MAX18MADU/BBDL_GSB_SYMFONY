@@ -1,6 +1,3 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
 Acceuil:
-    path: /Accueil
+    path: /accueil
     controller: App\Controller\IndexController::Accueil

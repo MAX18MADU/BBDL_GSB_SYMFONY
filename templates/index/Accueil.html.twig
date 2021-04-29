@@ -1,43 +1,16 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <style>
-          h1
-          {
-            text-align: center;
-            margin: unset;
-            padding: unset;
-          }
+{% extends 'base.html.twig' %}
 
-          #TopDiv
-          {
-            background-color: #679AFF;
-            width: 100%;
-            margin: unset;
-            padding: unset;
-          }
+{% block title %}
+Annonces - {{ parent () }}
+{% endblock %}
+{% block body %}
+{# On définit un sous-titre commun à toutes les pages du bundle #}
+<h1>Liste des médicaments</h1>
+<hr>
+{# On définit un nouveau bloc, que les vues du bundle pourront remplir.
+Ce nouveau bloc sera donc personnalisé par les templates finaux.
+On préfixe le nom du nouveau blox afin d'avoir un nom unique pour notre bundle #}
 
-          #LeftDiv
-          {
-            margin: left;
-          }
-        </style>
-        <title>Projet GSB</title>
-    </head>
-    <body>
-      <div>
-
-        <div id="TopDiv">
-          <h1>Projet GSB</h1>
-        </div>
-
-        <div id="LeftDiv">
-        </div>
-
-        <div id="BottomDiv">
-        </div>
-
-    </div>
-    </body>
-</html>
+{% block VBUAnnonce_body %}
+{% endblock %}
+{% endblock %}
