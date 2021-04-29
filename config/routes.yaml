@@ -1,9 +1,12 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
-Liste:
-    path: /
-    controller: App\Controller\IndexController::Liste
+#Liste:
+#    path: /
+#    controller: App\Controller\IndexController::Liste
+Acceuil:
+    path: /accueil
+    controller: App\Controller\IndexController::Accueil
 Details:
     path: /Details
     controller: App\Controller\IndexController::Details

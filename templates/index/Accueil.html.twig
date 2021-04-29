@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+Annonces - {{ parent () }}
+{% endblock %}
+{% block body %}
+{# On définit un sous-titre commun à toutes les pages du bundle #}
+<h1>Liste des médicaments</h1>
+<table align=center border=2>
+  <tr>
+    <th>Medicament</th>
+    <th>molécule</th>
+  </tr>
+  <tr>
+    <td>test</td>
+    <td>test</td>
+    <td><a href="{{ path('Details') }}">details</a></td>
+
+  </tr>
+  <tr>
+    <td>test</td>
+    <td>test</td>
+    <td><a href="{{ path('Details') }}">details</a></td>
+  </tr>
+</table>
+
+<hr>
+{# On définit un nouveau bloc, que les vues du bundle pourront remplir.
+Ce nouveau bloc sera donc personnalisé par les templates finaux.
+On préfixe le nom du nouveau blox afin d'avoir un nom unique pour notre bundle #}
+
+{% block VBUAnnonce_body %}
+{% endblock %}
+{% endblock %}

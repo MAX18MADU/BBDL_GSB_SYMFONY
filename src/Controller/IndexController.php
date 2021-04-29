@@ -11,12 +11,6 @@ class IndexController extends AbstractController
     /**
      * @Route("/index", name="index")
      */
-    public function index(): Response
-    {
-        return $this->render('index/index.html.twig', [
-            'controller_name' => 'IndexController',
-        ]);
-    }
 
     public function Liste(): Response
     {
@@ -31,4 +25,18 @@ class IndexController extends AbstractController
             'controller_name' => 'IndexController',
         ]);
     }
+
+    public function Accueil(): Response
+    {
+        return $this->render('index/Accueil.html.twig');
+    }
+
+    public function index(): Response
+    {
+      $dev = "Matthieu Devillers, Maxence Dupuis, Antony Lambert et Valentin Bulot";
+      return $this->render('index/index.html.twig', [
+        'webmaster' => $dev,
+    ]);
+    }
+
 }
