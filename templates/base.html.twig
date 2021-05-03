@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/9f10ce9dff.js" crossorigin="anonymous"></script>
 
   {# Création du bloc "title" avec "GSB" comme contenu par défaut #}
   <title>{% block title %}GSB{% endblock %}</title>
@@ -11,6 +12,30 @@
   <link rel="stylesheet" href="{{ asset ('css/bootstrap.css') }}" type="text/css" />
   {% endblock %}
 </head>
+<style>
+
+.lightgrey
+{
+  background-color: #E5E5E5;
+}
+
+.lightblue
+{
+  background-color: #A6C7FC;
+}
+
+tr
+{
+  width:auto;
+  border: 1px solid black;
+}
+
+button
+{
+  border-radius: 6px;
+}
+
+</style>
 
 <body>
   <div class="container">
