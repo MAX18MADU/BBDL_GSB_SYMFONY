@@ -11,32 +11,24 @@ class IndexController extends AbstractController
     /**
      * @Route("/index", name="index")
      */
-
-    public function Liste(): Response
-    {
-        return $this->render('index/Liste.html.twig', [
-            'controller_name' => 'IndexController',
-        ]);
-    }
-
-    public function Details(): Response
-    {
-        return $this->render('index/Details.html.twig', [
-            'controller_name' => 'IndexController',
-        ]);
-    }
-
     public function Accueil(): Response
     {
         return $this->render('index/Accueil.html.twig');
     }
 
-    public function index(): Response
+    public function Modification(): Response
     {
-      $dev = "Matthieu Devillers, Maxence Dupuis, Antony Lambert et Valentin Bulot";
-      return $this->render('index/index.html.twig', [
-        'webmaster' => $dev,
-    ]);
+        return $this->render('index/Modification.html.twig');
+    }
+
+    public function Ajout(): Response
+    {
+      return $this->render('index/Ajout.html.twig');
+    }
+
+    public function Suppression(): Response
+    {
+      return $this->render('index/Suppression.html.twig');
     }
 
 }

@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {# Création du bloc "title" avec "Plateforme" comme contenu par défaut #}
-  <title>{% block title %}Plateforme{% endblock %}</title>
+  {# Création du bloc "title" avec "GSB" comme contenu par défaut #}
+  <title>{% block title %}GSB{% endblock %}</title>
 
   {% block stylesheets %}
-  <link rel="stylesheet" href="{{ asset ('web/css/bootstrap.css') }}" type="text/css" />
+  <link rel="stylesheet" href="{{ asset ('css/bootstrap.css') }}" type="text/css" />
   {% endblock %}
 </head>
 
@@ -23,8 +23,10 @@
         <h3>Menu</h3>
         <ul class="nav nav-pills navs-stacked">
           {# Utilisation de la fonction {{ path }} pour faire des liens vers d'autres routes #}
-          <li>Accueil</a></li>
-          <li>Modification des médicaments</a></li>
+          <li><a href="{{ path('Accueil') }}">Accueil</a></li>
+          <li><a href="{{ path('Ajout') }}">Ajout d'un médicament</a></li>
+          <li><a href="{{ path('Modification') }}">Modification d'un médicaments</a></li>
+          <li><a href="{{ path('Suppression') }}">Suppression d'un médicament</a></li>
         </ul>
       </div>
       <div id="content" class="col-md-9">
@@ -34,6 +36,9 @@
       </div>
     </div>
     <hr>
+    <footer>
+      <p>Site développé par {{webmaster}}</p>
+    </footer>
   </div>
 </body>
 </html>
