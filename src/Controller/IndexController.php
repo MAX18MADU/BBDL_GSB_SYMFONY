@@ -15,4 +15,9 @@ class IndexController extends AbstractController
     {
         return $this->render('index/Accueil.html.twig');
     }
+
+    public function Modification(): Response
+    {
+        return $this->render('index/Modification.html.twig');
+    }
 }
