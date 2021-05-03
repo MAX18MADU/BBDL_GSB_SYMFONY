@@ -15,13 +15,4 @@ class IndexController extends AbstractController
     {
         return $this->render('index/Accueil.html.twig');
     }
-
-    public function index(): Response
-    {
-      $dev = "Matthieu Devillers, Maxence Dupuis, Antony Lambert et Valentin Bulot";
-      return $this->render('index/index.html.twig', [
-        'webmaster' => $dev,
-    ]);
-    }
-
 }

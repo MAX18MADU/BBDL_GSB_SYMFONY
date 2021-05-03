@@ -1,3 +1,7 @@
-Acceuil:
+Accueil:
     path: /accueil
     controller: App\Controller\IndexController::Accueil
+
+Modification:
+  path: /modification-medicament
+  controller: App\Controller\IndexController:Modification
