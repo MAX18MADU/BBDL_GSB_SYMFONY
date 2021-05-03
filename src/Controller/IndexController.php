@@ -20,4 +20,14 @@ class IndexController extends AbstractController
     {
         return $this->render('index/Modification.html.twig');
     }
+
+    public function Ajout(): Response
+    {
+      return $this->render('index/Ajout.html.twig');
+    }
+
+    public function Suppression(): Response
+    {
+      return $this->render('index/Suppression.html.twig');
+    }
 }

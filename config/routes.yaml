@@ -6,6 +6,10 @@ Modification:
   path: /modification-medicament
   controller: App\Controller\IndexController:Modification
 
-  Ajout:
-    path: /ajout-medicament
-    controller: App\Controller\IndexController:Ajout
+Ajout:
+  path: /ajout-medicament
+  controller: App\Controller\IndexController:Ajout
+
+Suppression:
+  path: /suppression-medicament
+  controller: App\Controller\IndexController:Suppression
