@@ -31,4 +31,9 @@ class IndexController extends AbstractController
       return $this->render('index/Suppression.html.twig');
     }
 
+    public function Details(): Response
+    {
+      return $this->render('index/Details.html.twig');
+    }
+
 }
