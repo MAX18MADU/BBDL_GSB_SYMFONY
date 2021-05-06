@@ -10,7 +10,18 @@
 
 <label>Nom du médicament : <input type="text" style="width:24em"></input></label>
 
-<br>
-<button>Ajouter le médicament</button>
+<table style="width:100%; background-color:#D5D5D5">
+<tbody id="AjoutMol">
+  <tr style="border:unset" id="MolObligatoire">
+    <td style="width:auto">Nom des molécules</td>
+    <td style="width:auto"><input type="text"></input></td>
+  </tr>
+</tbody>
+</table>
+
+<button style="width:100%" onclick="AjoutMolecule()"><i class="fas fa-plus"></i></button>
+
+
+<button style="margin: 10px 0px 0px 0px;">Ajouter le médicament</button>
 
 {% endblock %}
