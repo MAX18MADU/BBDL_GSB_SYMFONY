@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+{{ parent () }} - Détail d'un médicament
+{% endblock %}
+{% block body %}
+<p><h1>{{ medicament.nommedicament }}</h1></p>
+<p>CIP : ({{ medicament.CIP }})</p>
+<p>Grammage : {{ medicament.Grammage }}</p>
+<p>Laboratoire : {{ medicament.idLaboratoire.raisonsociale }}</p>
+<div class="Excipient">
+    <p><h2>Liste des excipients : </h2></p>
+    
+</div>
+<div class="Molecule">
+    <p><h2>Liste des molécules : </h2></p>
+</div>
+{% endblock %}

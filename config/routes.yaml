@@ -13,3 +13,7 @@ Ajout:
 Suppression:
   path: /suppression-medicament
   controller: App\Controller\IndexController:Suppression
+
+Detail:
+    path: /detail-medicament/{CIP}
+    controller: App\Controller\IndexController:Detail

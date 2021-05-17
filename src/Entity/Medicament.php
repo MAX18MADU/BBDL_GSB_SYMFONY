@@ -10,7 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Medicament
  *
  * @ORM\Table(name="medicament", indexes={@ORM\Index(name="FK_LABORATOIRE_MEDICAMENT", columns={"IDLABORATOIRE"})})
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="App\Repository\MedicamentRepository")
  */
 class Medicament
 {
@@ -118,6 +118,7 @@ class Medicament
 
         return $this;
     }
+
 
     public function getGrammage(): ?string
     {

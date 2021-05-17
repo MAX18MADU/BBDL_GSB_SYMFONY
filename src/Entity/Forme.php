@@ -10,7 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Forme
  *
  * @ORM\Table(name="forme")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="App\Repository\FormeRepository")
  */
 class Forme
 {

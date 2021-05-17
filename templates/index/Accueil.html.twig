@@ -11,16 +11,17 @@
 <table style="width:100%">
   <tr class="lightgrey">
     <td>Médicaments</td>
-    <td>Molécules</td>
+    <td>CIP</td>
     <td>Détails</td>
   </tr>
-  <tr class="lightblue">
-    <td>Test</td>
-    <td>Test</td>
-    <td style="text-align:center; border:unset"><i class="fas fa-search"></i></a></td>
-  </tr>
+  {% for medicament in medicaments %}
+   <tr class="lightblue">
+     <td>{{ medicament.nommedicament }}</td>
+     <td>{{ medicament.CIP }}</td>
+     <td style="text-align:center; border:unset"><a href="{{ path('Detail', { 'CIP': medicament.CIP }) }}"><i class="fas fa-search"></i></a></td>
+   </tr>
+  {% endfor %}
 </table>
 
-{#<a href="{{ path('Detail') }}">#}
 
 {% endblock %}
