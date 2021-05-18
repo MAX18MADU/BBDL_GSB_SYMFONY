@@ -14,7 +14,7 @@
   function AjoutMolecule()
   {
     var Contenu = document.getElementById('AjoutMol').innerHTML;
-		Contenu = Contenu + '<tr style="border:unset" id='+ increment +'"><td></td><td style="width:auto"><input type="text"/></td><td style="text-align:center"><i onclick="DeleteLigneMolecule('+ increment +')" class="fas fa-trash" style="color:red"></td></tr>';
+		Contenu = Contenu + '<tr style="border:unset" id="Mol"'+ increment +'"><td></td><td style="width:auto"><input type="text"/></td><td style="text-align:center"><i onclick="DeleteLigneMolecule('+ increment +')" class="fas fa-trash" style="color:red"></td></tr>';
 		document.getElementById('AjoutMol').innerHTML = Contenu;
     increment++;
   }
@@ -24,8 +24,7 @@
    */
   function DeleteLigneMolecule(id)
   {
-    document.getElementById("AjoutMol").getElementById(id).remove();
-    //deleteRow(id+1);
+    document.getElementById('AjoutMol').deleteRow("Mol"+id);
   }
 
   </script>
